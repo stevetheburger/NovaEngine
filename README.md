@@ -1,19 +1,19 @@
 # NovaEngine
 
 Overview:
-  An ambitious C project of mine from 2020 that was an attempt at creating an interpreted language. Was lost to a dead computer years ago. The original Git repository is unrecoverable but the program itself remains and it's final version however incomplete is stable.
+	An ambitious C project of mine from 2020 that was an attempt at creating an interpreted language. Was lost to a dead computer years ago. The original Git repository is unrecoverable but the program itself remains and it's final version however incomplete is stable.
 
 Compatibility: 
-  This program was developed on a Linux system, and so direct use on Windows is not currently supported. In order to run, either simply using a Linux system directly or alternatively, if using Windows, use the Windows Subsystem for Linux (WSL) like I did when recovering and ressurecting this project.
+	This program was developed on a Linux system, and so direct use on Windows is not currently supported. In order to run, either simply using a Linux system directly or alternatively, if using Windows, use the Windows Subsystem for Linux (WSL) like I did when recovering and ressurecting this project.
 
 Detail:
-  The language/grammar itself is very simple, supporting only addition, subtraction, and negative numbers in its final and current form. Division, multiplication, and modulus were the next planned features. The program includes a parser that utilized a stack-based approach to token parsing as well an example of a multi-threaded circular buffer, all, along with other features, complete and as well as planned, organized into a small framework that is pieced together like a lego set in the main file. All of this was written in C utilizing the pthreads library for multi-threading support, using only vim, gcc, make, and valgrind on a headless Ubuntu computer consulting only a C manual. This setup was taken on as a personal challenge during the initial covid lockdown, but was certainly Spartan, and in hindsight probably unnecessary. The program size itself is very small, taking up only 36KB on my system.
+	The language/grammar itself is very simple, supporting only addition, subtraction, and negative numbers in its final and current form. Division, multiplication, and modulus were the next planned features. The program includes a parser that utilized a stack-based approach to token parsing as well an example of a multi-threaded circular buffer, all, along with other features, complete and as well as planned, organized into a small framework that is pieced together like a lego set in the main file. All of this was written in C utilizing the pthreads library for multi-threading support, using only vim, gcc, make, and valgrind on a headless Ubuntu computer consulting only a C manual. This setup was taken on as a personal challenge during the initial covid lockdown, but was certainly Spartan, and in hindsight probably unnecessary. The program size itself is very small, taking up only 36KB on my system.
 
 Look at:
-Circular buffer: novapipe.c/.h
-Parser: novacmp.c/.h
-Object-oriented C/Grammar: novaexe.c/.h
-"Lego-set" in action: novamain.c
+	Circular buffer: novapipe.c/.h
+	Parser: novacmp.c/.h
+	Object-oriented C/Grammar: novaexe.c/.h
+	"Lego-set" in action: novamain.c
 
 Running:
   1. In a Linux console, type make in the top directory to run the makefile.
